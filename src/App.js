@@ -1,13 +1,14 @@
+import React from 'react';
 import './App.css';
+import RandomlySelectedPokemons from './components/RandomlySelectedPokemons';
+import TopAppBar from './components/TopAppBar';
 
-function App() {
+export default function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Here we go!</p>
-      </header>
+      <TopAppBar />
+      <RandomlySelectedPokemons />
     </div>
   );
 }
-
-export default App;
