@@ -1,3 +1,55 @@
 .App {
   text-align: center;
 }
+/* PokemonList.js */
+.pokemon-list {
+  max-width: 100%;
+  width: 125px;
+}
+#pokemon-title {
+  text-transform: capitalize;
+  font-family: 'Overpass', sans-serif;
+}
+/* PokemonCard.js */
+#dialog-pokemon-card {
+  border: solid 15px #e3e648;
+  background-color: #91d69f;
+}
+#dialog-pokemon-name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: 'Overpass', sans-serif;
+}
+#dialog-pokemon-hp{
+  font-family: 'Overpass', sans-serif;
+  color: #d61212;
+}
+#dialog-pokemon-card-img {
+  width: auto;
+  outline-style: double;
+  outline-color: #858788;
+  outline-width: 2px;
+  border: solid 3px #a0a1a2;
+  margin: 10px;
+  background-color: aliceblue;
+  border-radius: 3%;
+  box-shadow: 0 8px 12px 0 #00000033, 0 10px 24px 0 #00000030;
+}
+#dialog-pokemon-card-img-not-found {
+  max-width: 240px;
+  height: auto;
+  outline-style: double;
+  outline-color: #858788;
+  outline-width: 2px;
+  border: solid 3px #a0a1a2;
+  margin: 10px;
+  background-color: aliceblue;
+  border-radius: 3%;
+  box-shadow: 0 8px 12px 0 #00000033, 0 10px 24px 0 #00000030;
+}
+#dialog-pokemon-close {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');

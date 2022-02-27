@@ -1,14 +1,15 @@
 import React from 'react';
+import { Routes, Route } from 'react-router';
 import './App.css';
-import RandomlySelectedPokemons from './components/RandomlySelectedPokemons';
-import TopAppBar from './components/TopAppBar';
+import FetchPokemonData from './components/FetchPokemonData';
 
 export default function App() {
 
   return (
     <div className="App">
-      <TopAppBar />
-      <RandomlySelectedPokemons />
+        <Routes>
+          <Route path='/' element={<FetchPokemonData />} />
+        </Routes>
     </div>
   );
 }
