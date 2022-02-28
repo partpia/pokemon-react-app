@@ -7,9 +7,17 @@ export default function App() {
 
   return (
     <div className="App">
-        <Routes>
-          <Route path='/' element={<FetchPokemonData />} />
-        </Routes>
-    </div>
+      <Routes>
+        <Route path='/' element={<FetchPokemonData />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>No Pokémons here!</p>
+            </main>
+          }
+        />
+    </Routes>
+    </div >
   );
 }
